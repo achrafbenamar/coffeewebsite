@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Categories</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body class="bb">
+ <div><h3>Catégories →</h3></div>
+<div class="categories">
+  <div class="category" onclick="openItems('boissons.html')">
+    <img src="Photos/boissons.png" alt="Boissons">
+    <span>Boissons</span>
+  </div>
+  <div class="category" onclick="openItems('cuisine.html')">
+    <img src="Photos/cuisine.png" alt="Cuisine">
+    <span>Cuisine</span>
+  </div>
+  <div class="category" onclick="openItems('sucre.html')">
+    <img src="Photos/sucre.png" alt="Sucré">
+    <span>Sucré</span>
+  </div>
+  <div class="category" onclick="openItems('chicha.html')">
+    <img src="Photos/chicha.png" alt="Chicha">
+    <span>Chicha</span>
+  </div>
+  <div class="category" onclick="openItems('petitdejeuner.html')">
+    <img src="Photos/petit.png" alt="Petit Déjeuner">
+    <span>Petit Déjeuner</span>
+  </div>
+</div>
+<div><h3>Sous-catégories ↓</h3></div>
+<script>
+function openItems(page) {
+  parent.frames['items-frame'].location.href = page;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="all-grid">
+
+
+  <div class="tous-les-box" onclick="toggleSubItems('crepe-sub')">
+    <h3>Crépes Salée</h3>
+    <img src="Photos/crepe thon.png" alt="crepe">
+    <div id="crepe-sub" class="subitems">
+
+      
+      <div class="subitem">
+        <img src="Photos/crepe thon.png" alt="crepe thon">
+        <div class="subitem-info">
+          <h4>Thon Fromage</h4>
+          <p class="price">12,50 DT</p>
+        </div>
+      </div>
+
+      
+      <div class="subitem">
+        <img src="Photos/crepe americ.png" alt="crepe americ">
+        <div class="subitem-info">
+          <h4>Américaine</h4>
+          <p class="price">14,00 DT</p>
+          <p>Description: Fromage, Jombon et Bacon.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+    <div class="tous-les-box" onclick="toggleSubItems('Omelettes-sub')">
+    <h3>Omelettes</h3>
+    <img src="Photos/omletteThon.png" alt="">
+    <div id="Omelettes-sub" class="subitems">
+
+
+      <div class="subitem">
+        <img src="Photos/omletteThon.png" alt="">
+        <div class="subitem-info">
+          <h4>Thon Fromage</h4>
+          <p class="price">13,5 DT</p>
+        </div>
+      </div>
+
+
+      <div class="subitem">
+        <img src="Photos/Omletteveg.png" alt="">
+        <div class="subitem-info">
+          <h4>Végétarienne</h4>
+          <p class="price">9,5 DT</p>
+          <p>Description: Piment, Onion, Tomate</p>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+    
+
+</div>
+
+<script>
+function toggleSubItems(id) {
+  const sub = document.getElementById(id);
+  sub.style.display = sub.style.display === 'none' ? 'block' : 'none';
+}
+</script>
+
+</body>
+</html>

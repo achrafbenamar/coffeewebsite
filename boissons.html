@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Boissons</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="all-grid">
+
+
+  <div class="tous-les-box" onclick="toggleSubItems('cafe-sub')">
+    <h3>Nos Café</h3>
+    <img src="Photos/express.png" alt="Café">
+    <div id="cafe-sub" class="subitems">
+
+
+      <div class="subitem">
+        <img src="Photos/express.png" alt="Express">
+        <div class="subitem-info">
+          <h4>Express</h4>
+          <p class="price">3,50 DT</p>
+          <p>Description: Café intense pour bien commencer la journée.</p>
+        </div>
+      </div>
+
+
+      <div class="subitem">
+        <img src="Photos/mach.png" alt="Macchiato">
+        <div class="subitem-info">
+          <h4>Macchiato</h4>
+          <p class="price">4,00 DT</p>
+          <p>Description: Espresso avec une touche de lait moussé.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <div class="tous-les-box" onclick="toggleSubItems('the-sub')">
+    <h3>Thé</h3>
+    <img src="Photos/the vert.png" alt="Thé">
+    <div id="the-sub" class="subitems">
+
+
+      <div class="subitem">
+        <img src="Photos/the vert.png" alt="Thé Vert">
+        <div class="subitem-info">
+          <h4>Thé Vert</h4>
+          <p class="price">3,00 DT</p>
+          <p>Description: Thé vert bio, frais et parfumé.</p>
+        </div>
+      </div>
+
+
+      <div class="subitem">
+        <img src="Photos/the inf.png" alt="Thé Infusion">
+        <div class="subitem-info">
+          <h4>Thé Infusion</h4>
+          <p class="price">6,00 DT</p>
+          <p>Description: Mélange de plantes relaxantes.</p>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+
+
+        
+  <div class="tous-les-box" onclick="toggleSubItems('boissons-sub')">
+    <h3>Boissons</h3>
+    <img src="Photos/canette.png" alt="">
+    <div id="boissons-sub" class="subitems">
+      <div class="subitem">
+        <img src="Photos/canette.png" alt="">
+        <div class="subitem-info">
+          <h4>Soda Canette</h4>
+          <p class="price">4 DT</p>
+        </div>
+      </div>
+      <div class="subitem">
+        <img src="Photos/eau0,5.png" alt="">
+        <div class="subitem-info">
+          <h4>Eau 0,5l</h4>
+          <p class="price">2 DT</p>
+        </div>
+      </div>
+      <div class="subitem">
+        <img src="Photos/eau1.png" alt="">
+        <div class="subitem-info">
+          <h4>Eau 1l</h4>
+          <p class="price">3,5 DT</p>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+    
+</div>
+
+<script>
+function toggleSubItems(id) {
+  const sub = document.getElementById(id);
+  sub.style.display = sub.style.display === 'none' ? 'block' : 'none';
+}
+</script>
+
+</body>
+</html>
